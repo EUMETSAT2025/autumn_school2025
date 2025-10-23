@@ -24,7 +24,9 @@ for composite in $(echo $ch | tr "," " ")
 do
 	echo python image.py $file_location $composite $process_date \"$coords\" $resolution >> commands.txt
 done
-processed=$(echo "$processed + $step*60" | bc -l)          
+#processed=$(echo "$processed + $step*60" | bc -l)     
+processed=$(awk "BEGIN {print $processed + ($step * 60)}")
+
 done          
 
 #conda activate MTGX
