@@ -1,0 +1,47 @@
+name: fire
+channels:
+    - conda-forge
+dependencies:
+    - affine=2.4.0
+    - cartopy=0.23.0
+    - cdsapi=0.7.0
+    - ecmwf-api-client=1.6.3
+    - ffmpeg=6.1.1
+    - fiona=1.9.6
+    - gdal=3.8.5
+    - geojson=3.1.0
+    - h5py=3.11.0
+    - imageio-ffmpeg=0.4.9
+    - imageio=2.34.1
+    - ipyleaflet=0.19.0
+    - ipython=8.16.1
+    - ipywidgets=8.1.2
+    - magics-python=1.5.8
+    - matplotlib-inline=0.1.7
+    - matplotlib=3.8.4
+    - netcdf4=1.6.5
+    - numpy=1.26.4
+    - pandas=2.2.2
+    - pydecorate=0.4.0
+    - pyhdf=0.11.4
+    - pyorbital=1.8.2
+    - pyproj=3.6.1
+    - pyresample=1.28.3
+    - pyspectral=0.13.0
+    - python=3.9.1
+    - python-dateutil=2.9.0
+    - python-geotiepoints=1.7.2
+    - rasterio=1.3.10
+    - requests=2.31.0
+    - satpy=0.48.0
+    - scikit-image=0.22.0
+    - shapely=2.0.4
+    - urllib3=2.2.1
+    - xarray=2024.3.0
+    - pip:
+        - gmaps==0.9.0
+        - ecmwf-data==0.0.1
+        - ecmwf-opendata==0.3.8
+        - ecmwflibs==0.6.3
+        - magpye==0.1.4
+        - wget==3.2
