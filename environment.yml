@@ -1,4 +1,4 @@
-name: MTG
+name: MTG24
 channels:
   - conda-forge
 dependencies:
@@ -12,3 +12,4 @@ dependencies:
   - conda-forge::pydecorate
   - conda-forge::ipympl
   - conda-forge::pyhdf
+  - conda-forge::s3fs
