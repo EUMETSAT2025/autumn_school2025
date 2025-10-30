@@ -6,7 +6,7 @@ S3_ENDPOINT_URL = "https://s3.waw3-2.cloudferro.com"
 BUCKET_NAME = "training"
 # If you want to copy only a subfolder inside the bucket, set PREFIX (no leading slash).
 # Example: PREFIX = "some/folder"  or "" to copy the whole bucket root
-PREFIX = "static_files"  
+PREFIX = "static-files"  
 
 # Local destination folder (relative to current working dir)
 LOCAL_DIR = "./" 
