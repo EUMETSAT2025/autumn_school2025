@@ -16,7 +16,8 @@ This will create a Python environment called **MTG**. The environment won't be a
 
 ### Running the Script
 
-*Note: To be able to run the examples below, please make sure to work from a machine that has access to /data/Weather/ directory*
+*Note: Please change the "/data/Weather/script/" in the command examples below with the exact download location of your data, eq. ~/autumn_school2025/data_download/
+or similar*
 
 1. change directory to script/ by doing ->  cd script
 2. Run the script by following the example below
