@@ -1,4 +1,4 @@
-name: MTG24
+name: MTG
 channels:
   - conda-forge
 dependencies:
