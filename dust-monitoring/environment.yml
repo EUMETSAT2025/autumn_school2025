@@ -1,0 +1,21 @@
+name: dust
+channels:
+  - conda-forge
+dependencies:
+  - Cartopy #=0.23.0
+  - cdsapi #=0.7.0
+  - dask #=2024.4.2
+  - ffmpeg #=6.1.1
+  - matplotlib #=3.8.4
+  - matplotlib-inline #=0.1.6
+  - netcdf4 #=1.6.5
+  - proj #=9.1.0
+  - pyhdf #=0.11.4
+  - satpy #=0.48.0
+  - xarray #=2024.3.0
+  - pip
+  - pip:
+    - airbase #==0.7.0
+    - pyproj #==3.2.1
+    - wget #==3.2
+
