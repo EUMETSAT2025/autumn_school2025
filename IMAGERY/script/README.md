@@ -14,6 +14,30 @@ This will create a Python environment called **MTG**. The environment won't be a
 
 `conda activate MTG`
 
+ATTENTION! In case getting message such as: 
+
+jovyan@jupyter-autumnstrelec:~/autumn_school2025/IMAGERY/script$ conda activate MTG
+ 
+EnvironmentNameNotFound: Could not find conda environment: MTG
+You can list all discoverable environments with `conda info --envs`.
+
+In that case you will run: `conda info --envs`
+And get listing similar to below:
+
+# conda environments:
+#
+                         /home/jovyan/autumn_school2025/Lab10_FCI_data_display/MTG
+                         /home/jovyan/autumn_school2025/eumdac_data_store/eumdac_data_store
+                         /home/jovyan/autumn_school2025/fire-monitoring/active/LSASAF_env_plus
+                         /home/jovyan/autumn_school2025/fire-monitoring/fire
+base                  *  /opt/conda
+
+We want to activate the MTG environment, so we run conda activate command with absolute path:
+
+conda activate /home/jovyan/autumn_school2025/Lab10_FCI_data_display/MTG
+
+After that, the environment should be activated.
+
 ### Running the Script
 
 *Note: Please change the "/data/Weather/script/" in the command examples below with the exact download location of your data, eq. ~/autumn_school2025/data_download/
