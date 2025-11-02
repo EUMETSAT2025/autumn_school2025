@@ -60,3 +60,18 @@ for dirpath, dirnames, filenames in fs.walk(root_path):
 
 print(f"\n✅ Done. {download_count} file(s) downloaded to: {os.path.abspath(LOCAL_DIR)}")
 
+from zipfile import ZipFile as zip
+zipName = PREFIX + '/H-SAF_datasets.zip'
+
+try:
+    with zip(zipName, 'r') as z:
+        for f in z.namelist():
+            if f.endswith('/') or f.startswith('__'): # skip folders and __MACOSX
+                continue
+            target_dir = './HSAF/data/'
+            z.extract(f, path=target_dir)
+    os.remove(zipName)
+except Exception as e:
+    print(f"⚠️ Failed to extract file: {e}")
+else:
+    print(f"✅ HSAF datasets extracted succesfully")
